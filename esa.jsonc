@@ -1,0 +1,9 @@
+{
+  "name": "unimc-official",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build:export",
+  "assets": {
+    "directory": "./out",
+    "notFoundStrategy": "singlePageApplication"
+  }
+}
