@@ -133,6 +133,30 @@ body {
   color: #2750a8;
 }
 
+/* Server card styling */
+.um-server-card {
+  border-radius: 14px !important;
+  background: rgba(255, 255, 255, 0.82) !important;
+  transition: all 0.3s ease;
+}
+
+.um-server-card:hover {
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12) !important;
+  transform: translateY(-2px);
+}
+
+/* Team member card styling */
+.um-team-card {
+  border-radius: 14px !important;
+  background: rgba(255, 255, 255, 0.82) !important;
+  transition: all 0.3s ease;
+}
+
+.um-team-card:hover {
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12) !important;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .um-nav {
     flex-direction: column;
@@ -147,5 +171,56 @@ body {
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
+  }
+}
+
+/* Image lazy loading enhancement */
+img[loading="lazy"] {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+img[loading="lazy"]:not([src*="data:"]):not([data-loaded="true"]) {
+  background: #f0f0f0;
+  min-height: 40px;
+}
+
+/* Performance Optimizations */
+/* GPU acceleration for animations */
+.um-server-card,
+.um-team-card {
+  will-change: transform, box-shadow;
+}
+
+/* Optimize motion frames */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Optimize button performance */
+button {
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* CSS containment for better performance */
+.um-section {
+  contain: layout style;
+}
+
+/* Optimize scrolling performance */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

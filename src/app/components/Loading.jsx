@@ -6,13 +6,15 @@ const Loading = () => {
   return (
     <div className="loading-wrapper">
       <div className="loading-circle">
-        <img 
-          src={'./logo.png'} 
-          alt="UniMC Logo" 
-          width={80} 
-          height={80} 
+        <img
+          src={'./logo.png'}
+          alt="UniMC Logo"
+          width={80}
+          height={80}
           className="logo-image"
           draggable="false"
+          loading="lazy"
+          style={{ background: 'transparent' }}
         />
       </div>
 

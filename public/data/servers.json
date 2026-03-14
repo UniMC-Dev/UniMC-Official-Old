@@ -1,0 +1,44 @@
+{
+  "servers": [
+    {
+      "id": "server-001",
+      "name": "Hypixel",
+      "type": "survival",
+      "description": "世界最大的Minecraft服务器网络",
+      "ip": "mcuf-mod.minemc.net",
+      "contact": "support@hypixel.net"
+    },
+    {
+      "id": "server-002",
+      "name": "2b2t",
+      "type": "survival",
+      "description": "最古老的无规则生存服务器",
+      "ip": "2b2t.org:25565",
+      "contact": "admin@2b2t.org"
+    },
+    {
+      "id": "server-003",
+      "name": "Mineplex",
+      "type": "mini-games",
+      "description": "丰富的小游戏内容",
+      "ip": "us.mineplex.com:25565",
+      "contact": "support@mineplex.com"
+    },
+    {
+      "id": "server-004",
+      "name": "CubeCraft",
+      "type": "mini-games",
+      "description": "多人游戏和社区活动",
+      "ip": "cc.cubecraft.net:25565",
+      "contact": "support@cubecraft.net"
+    },
+    {
+      "id": "server-005",
+      "name": "BuildTheEarth",
+      "type": "creative",
+      "description": "在Minecraft中重建地球的创意项目",
+      "ip": "play.buildtheearth.net:25565",
+      "contact": "info@buildtheearth.net"
+    }
+  ]
+}
